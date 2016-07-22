@@ -1,0 +1,71 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+body {
+	font-family: 'Raleway', sans-serif;
+	margin: 0;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	background-color: #CCC;
+}
+
+header, footer {
+	padding: 1rem 2rem;;
+	margin: 0;
+}
+
+header, footer, a.giant-link {
+	box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.5);
+	background-color: white;
+}
+
+main {
+	display: flex;
+	flex-direction: row;
+	flex: 1 1 auto;
+	flex-wrap: wrap;
+	perspective: 4000px;
+	perspective-origin: center;
+	padding: 1rem;
+}
+
+main > * {
+	flex: 1 1 auto;
+	margin: 1rem;
+}
+
+a.giant-link {
+	min-width: 256px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+
+	color: inherit;
+
+	transition: transform 0.125s ease-in-out;
+	text-decoration: none;
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.giant-link-text {
+	text-decoration: underline;
+	font-size: 4rem;
+	color: blue;
+}
+
+a.giant-link:hover {
+	transform: translateZ(100px);
+}
+
+a[href="resume"] {
+	background-image: url(resume-blurred.jpg);
+}
+
+a[href="http://chrismondok.github.io"] {
+	background-image: url(github-blurred.jpg);
+}
