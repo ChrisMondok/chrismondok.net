@@ -1,7 +1,23 @@
+@import url('./toc.css');
+
 :root {
-  --fg: #000000;
-  --article-bg: #FFFFFF;
-  --page-bg: #CCCCCC;
+  --fg: #222;
+  --article-bg: #FFF;
+  --page-bg: #CCC;
+  --link-color: blue;
+  --overlay-color: rgba(0, 0, 0, 0.25);
+  --github-icon-url: url(GitHub-Mark-32px.png);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg: #CCC;
+    --article-bg: #222;
+    --page-bg: #000000;
+    --link-color: orange;
+    --overlay-color: rgba(0, 0, 0, 0.5);
+    --github-icon-url: url(GitHub-Mark-Light-32px.png);
+  }
 }
 
 body {
@@ -11,6 +27,15 @@ body {
   margin: 0;
 }
 
+h1 {
+  padding: 1rem;
+  margin: 0;
+}
+
+a:any-link {
+  color: var(--link-color);
+}
+
 article {
   padding: 1rem;
   background-color: var(--article-bg);
@@ -18,4 +43,69 @@ article {
 
 article + article {
   margin-top: 2rem;
+}
+
+article header {
+  padding: 1em 0;
+}
+
+article header h2 {
+  margin: 0;
+}
+
+#toc-button {
+  z-index: 2;
+  position: fixed;
+  left: 18px;
+  bottom: 18px;
+  font-size: 1em;
+  background-color: var(--page-bg);
+  color: var(--fg);
+  border: 1px solid currentcolor;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  border-radius: 100%;
+  box-shadow: 0px 0px 8px black;
+}
+
+@media (min-width: 900px) {
+  body {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: fit-content(300px) fit-content(8in);
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  body > header {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  main {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  #toc-button {
+    display: none;
+  }
+}
+
+
+a[href^="https://web.archive.org"]:after {
+  content: '(archived)';
+  font-style: italic;
+}
+
+a[href^="https://github.com"]:after {
+  content: '';
+  display: inline-block;
+  font-style: italic;
+  height: 1em;
+  width: 1em;
+  background-size: 1em;
+  background-image: var(--github-icon-url);
+  vertical-align: bottom;
 }
