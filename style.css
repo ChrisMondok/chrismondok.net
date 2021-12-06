@@ -42,7 +42,7 @@ article {
 }
 
 article + article {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 article header {
@@ -73,7 +73,7 @@ article header h2 {
   body {
     display: grid;
     gap: 1rem;
-    grid-template-columns: fit-content(300px) fit-content(8in);
+    grid-template-columns: 250px fit-content(8in);
     justify-content: center;
     align-items: flex-start;
   }
