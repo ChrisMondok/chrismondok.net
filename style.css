@@ -5,6 +5,7 @@
   --article-bg: #FFF;
   --page-bg: #CCC;
   --link-color: blue;
+  --visited-link-color: purple;
   --overlay-color: rgba(0, 0, 0, 0.25);
   --github-icon-url: url(GitHub-Mark-32px.png);
 }
@@ -15,6 +16,7 @@
     --article-bg: #222;
     --page-bg: #000000;
     --link-color: orange;
+    --visited-link-color: chocolate;
     --overlay-color: rgba(0, 0, 0, 0.5);
     --github-icon-url: url(GitHub-Mark-Light-32px.png);
   }
@@ -32,8 +34,12 @@ h1 {
   margin: 0;
 }
 
-a:any-link {
+a:link {
   color: var(--link-color);
+}
+
+a:visited {
+  color: var(--visited-link-color);
 }
 
 article {
