@@ -94,7 +94,7 @@ a.play-button:hover {
   box-shadow: 0px 0px 8px var(--link-color);
 }
 
-img[src$="thumb.png"] {
+img[src$="thumb.webp"] {
   width: 128px;
   height: 128px;
   object-fit: contain;
