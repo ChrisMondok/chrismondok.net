@@ -28,6 +28,7 @@ export function createTableOfContents() {
   });
 
   const list = document.createElement('ul');
+  list.classList.add('link-list');
   for(const entry of entries) list.appendChild(entry);
 
   updateLinkActiveStates();

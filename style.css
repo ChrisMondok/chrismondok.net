@@ -109,8 +109,8 @@ i[title="recommended"] {
 #toc-button {
   z-index: 2;
   position: fixed;
-  left: 18px;
-  bottom: 18px;
+  left: 32px;
+  bottom: 32px;
   font-size: 1em;
   background-color: var(--page-bg);
   color: var(--fg);
@@ -162,3 +162,10 @@ a[href^="https://github.com"]:after {
   background-image: var(--github-icon-url);
   vertical-align: bottom;
 }
+
+@media (hover: none) {
+  .link-list li+li {
+    padding-top: 0.5rem;
+  }
+}
+
