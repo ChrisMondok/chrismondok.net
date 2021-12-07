@@ -163,7 +163,7 @@ a[href^="https://github.com"]:after {
   vertical-align: bottom;
 }
 
-@media (hover: none) {
+@media (pointer: coarse) {
   .link-list li+li {
     padding-top: 0.5rem;
   }
