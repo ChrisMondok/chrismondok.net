@@ -101,6 +101,7 @@ img[src$="thumb.webp"] {
 
 i[title="recommended"] {
   color: var(--star-color);
+  font-style: normal;
 }
 
 #toc-button {
