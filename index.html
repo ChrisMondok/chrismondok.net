@@ -1,68 +1,124 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8"/>
-    <title> Projects by Chris Mondok </title>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="toc.css"/>
-    <meta name="viewport" content="height=device-height, width=device-width"/>
+    <meta charset="utf-8" />
+    <title>Projects by Chris Mondok</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="height=device-height, width=device-width" />
+    <script defer type="module" src="script.js"></script>
   </head>
   <body>
     <header>
-      <h1> Projects by Chris Mondok </h1>
+      <h1>Projects by Chris&nbsp;Mondok</h1>
+      <button id="nav-button" onclick="body.classList.toggle('show-nav')">
+        <svg
+          height="21"
+          viewBox="0 0 21 21"
+          width="21"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g fill="none" fill-rule="evenodd" transform="translate(3 5)">
+            <g
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="m4.5 1.5h8" />
+              <path d="m4.5 5.498h5" />
+              <path d="m4.5 9.5h8" />
+            </g>
+            <path
+              d="m1.49884033 2.5c.5 0 1-.5 1-1s-.5-1-1-1-.99884033.5-.99884033 1 .49884033 1 .99884033 1zm0 4c.5 0 1-.5 1-1s-.5-1-1-1-.99884033.5-.99884033 1 .49884033 1 .99884033 1zm0 4c.5 0 1-.5 1-1s-.5-1-1-1-.99884033.5-.99884033 1 .49884033 1 .99884033 1z"
+              fill="currentColor"
+            />
+          </g>
+        </svg>
+      </button>
     </header>
     <main>
       <article id="crosswordle">
         <header>
-          <h2> Crosswordle <i title="recommended">★</i></h2>
+          <h2>Crosswordle <i title="recommended">★</i></h2>
           <div class="subtitle">
             <time datetime="2022-04-01">April 2022</time>
           </div>
-          <a class="play-button" href="https://chrismondok.github.io/crosswordle"> Play </a>
+          <a
+            class="play-button"
+            href="https://chrismondok.github.io/crosswordle"
+          >
+            Play
+          </a>
         </header>
 
         <p>
-        Crosswordle is a 5×5 wordle clone (they were popular at time time). Each row and column is a valid English word.
+          Crosswordle is a 5×5 wordle clone (they were popular at time time).
+          Each row and column is a valid English word.
         </p>
 
         <p>
-        I created this game while on vacation, where some friends and I were guessing how many solutions there would be to a
-        puzzle like this. There were guesses everywhere from 4 to a million. It took a little while to figure them all out, but
-        there are 81,572 solutions. Note that each transposed solution is also a valid solution, so the number most people were
-        guessing for was 40,786.
+          I created this game while on vacation, where some friends and I were
+          guessing how many solutions there would be to a puzzle like this.
+          There were guesses everywhere from 4 to a million. It took a little
+          while to figure them all out, but there are 81,572 solutions. Note
+          that each transposed solution is also a valid solution, so the number
+          most people were guessing for was 40,786.
         </p>
 
-        <h3> Images </h3>
-        <a href="crosswordle/screenshot1.png"><img src="crosswordle/screenshot1.thumb.webp" alt="Crosswordle Screenshot" loading="lazy"></a>
-        <a href="crosswordle/screenshot2.png"><img src="crosswordle/screenshot2.thumb.webp" alt="Crosswordle Screenshot" loading="lazy"></a>
+        <h3>Images</h3>
+        <a href="crosswordle/screenshot1.png"
+          ><img
+            src="crosswordle/screenshot1.thumb.webp"
+            alt="Crosswordle Screenshot"
+            loading="lazy"
+        /></a>
+        <a href="crosswordle/screenshot2.png"
+          ><img
+            src="crosswordle/screenshot2.thumb.webp"
+            alt="Crosswordle Screenshot"
+            loading="lazy"
+        /></a>
 
-        <h3> Links </h3>
+        <h3>Links</h3>
         <ul class="link-list">
-          <li><a href="https://chrismondok.github.io/crosswordle"> Play Crosswordle </a></li>
-          <li><a href="https://github.com/chrismondok/crosswordle"> Source Code </a></li>
+          <li>
+            <a href="https://chrismondok.github.io/crosswordle">
+              Play Crosswordle
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/chrismondok/crosswordle">
+              Source Code
+            </a>
+          </li>
         </ul>
-
       </article>
       <article id="toil-and-trouble">
         <header>
-          <h2> Toil & Trouble </h2>
+          <h2>Toil & Trouble</h2>
           <div class="subtitle">
             Ludum Dare 49 — <time datetime="2021-10-04">October 2021</time>
           </div>
-          <a class="play-button" href="https://whatguns.itch.io/toil-and-trouble"> Play </a>
-
+          <a
+            class="play-button"
+            href="https://whatguns.itch.io/toil-and-trouble"
+          >
+            Play
+          </a>
         </header>
 
         <p>
-        Toil &amp; Trouble is a point-and-click adventure game with a potion brewing mechanic. You play the role of a young
-        witch who must explore a mysterious (but cozy) cottage and meet the characters that reside within!
+          Toil &amp; Trouble is a point-and-click adventure game with a potion
+          brewing mechanic. You play the role of a young witch who must explore
+          a mysterious (but cozy) cottage and meet the characters that reside
+          within!
         </p>
 
-        <h3> Credits </h3>
+        <h3>Credits</h3>
 
         <p>
-        Toil &amp; Trouble was created by <a href="https://whatguns.itch.io">What Guns Game Studios</a> for Ludum Dare 49
-        by:
+          Toil &amp; Trouble was created by
+          <a href="https://whatguns.itch.io">What Guns Game Studios</a> for
+          Ludum Dare 49 by:
         </p>
 
         <ul>
@@ -73,124 +129,242 @@
           <li>Ryan Shello - music, SFX, puzzle design</li>
         </ul>
 
-        <h3> Images </h3>
-        <a href="toil-and-trouble/title.png"><img src="toil-and-trouble/title.thumb.webp" alt="Toil &amp; Trouble Title Screen" loading="lazy"/></a>
-        <a href="toil-and-trouble/screenshot0.png"><img src="toil-and-trouble/screenshot0.thumb.webp" alt="Toil & Trouble screenshot" loading="lazy"/></a>
-        <a href="toil-and-trouble/screenshot1.png"><img src="toil-and-trouble/screenshot1.thumb.webp" alt="Toil & Trouble screenshot" loading="lazy"/></a>
-        <a href="toil-and-trouble/screenshot2.png"><img src="toil-and-trouble/screenshot2.thumb.webp" alt="Toil & Trouble screenshot" loading="lazy"/></a>
+        <h3>Images</h3>
+        <a href="toil-and-trouble/title.png"
+          ><img
+            src="toil-and-trouble/title.thumb.webp"
+            alt="Toil &amp; Trouble Title Screen"
+            loading="lazy"
+        /></a>
+        <a href="toil-and-trouble/screenshot0.png"
+          ><img
+            src="toil-and-trouble/screenshot0.thumb.webp"
+            alt="Toil & Trouble screenshot"
+            loading="lazy"
+        /></a>
+        <a href="toil-and-trouble/screenshot1.png"
+          ><img
+            src="toil-and-trouble/screenshot1.thumb.webp"
+            alt="Toil & Trouble screenshot"
+            loading="lazy"
+        /></a>
+        <a href="toil-and-trouble/screenshot2.png"
+          ><img
+            src="toil-and-trouble/screenshot2.thumb.webp"
+            alt="Toil & Trouble screenshot"
+            loading="lazy"
+        /></a>
 
-        <h3> Links </h3>
+        <h3>Links</h3>
         <ul class="link-list">
-          <li><a href="https://whatguns.itch.io/toil-and-trouble"> Play Toil & Trouble </a></li>
-          <li><a href="https://ldjam.com/events/ludum-dare/49/toil-and-trouble"> Ludum Dare Jam entry </a></li>
-          <li><a href="https://github.com/bassguitarbill/ludum-dare-49"> Source code </a></li>
+          <li>
+            <a href="https://whatguns.itch.io/toil-and-trouble">
+              Play Toil & Trouble
+            </a>
+          </li>
+          <li>
+            <a href="https://ldjam.com/events/ludum-dare/49/toil-and-trouble">
+              Ludum Dare Jam entry
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/bassguitarbill/ludum-dare-49">
+              Source code
+            </a>
+          </li>
         </ul>
       </article>
 
       <article id="depths-of-the-mind">
         <header>
-          <h2> Depths of the Mind <i title="recommended">★</i></h2>
+          <h2>Depths of the Mind <i title="recommended">★</i></h2>
           <div class="subtitle">
             Ludum Dare Compo 48 — <time datetime="2021-04-25">April 2021</time>
           </div>
-          <a class="play-button" href="https://chrismondok.itch.io/depths-of-the-mind"> Play </a>
+          <a
+            class="play-button"
+            href="https://chrismondok.itch.io/depths-of-the-mind"
+          >
+            Play
+          </a>
         </header>
 
         <p>
-        Isolate yourself from society to contemplate the meaning of life and create art of <em>tremendous depth</em>.
+          Isolate yourself from society to contemplate the meaning of life and
+          create art of <em>tremendous depth</em>.
         </p>
 
         <p>
-        Pilot your submarine into a dark cave, carefully monitor your air supply, and ponder existence in silence.
+          Pilot your submarine into a dark cave, carefully monitor your air
+          supply, and ponder existence in silence.
         </p>
 
         <p>
-        Depths of the Mind was a competition entry for Ludum Dare 49, which had the theme "Deeper and deeper". The
-        object of the game is dive deep into an undersea cave, contemplate for a while, and save enough air to return to
-        the surface.
+          Depths of the Mind was a competition entry for Ludum Dare 49, which
+          had the theme "Deeper and deeper". The object of the game is dive deep
+          into an undersea cave, contemplate for a while, and save enough air to
+          return to the surface.
         </p>
 
         <p>
-        <strong>Note:</strong> the object of this game is <em>not</em> simply to dive as deep as you can. Please read
-        the in-game "How to Play" page.
+          <strong>Note:</strong> the object of this game is <em>not</em> simply
+          to dive as deep as you can. Please read the in-game "How to Play"
+          page.
         </p>
 
-        <h3> Images </h3>
-        <a href="depths-of-the-mind/screenshot0.png"><img src="depths-of-the-mind/screenshot0.thumb.webp" alt="Depths of the Mind screenshot" loading="lazy"/></a>
-        <a href="depths-of-the-mind/screenshot1.png"><img src="depths-of-the-mind/screenshot1.thumb.webp" alt="Depths of the Mind screenshot" loading="lazy"/></a>
-        <a href="depths-of-the-mind/screenshot2.png"><img src="depths-of-the-mind/screenshot2.thumb.webp" alt="Depths of the Mind screenshot" loading="lazy"/></a>
-        <a href="depths-of-the-mind/screenshot3.png"><img src="depths-of-the-mind/screenshot3.thumb.webp" alt="Depths of the Mind screenshot" loading="lazy"/></a>
+        <h3>Images</h3>
+        <a href="depths-of-the-mind/screenshot0.png"
+          ><img
+            src="depths-of-the-mind/screenshot0.thumb.webp"
+            alt="Depths of the Mind screenshot"
+            loading="lazy"
+        /></a>
+        <a href="depths-of-the-mind/screenshot1.png"
+          ><img
+            src="depths-of-the-mind/screenshot1.thumb.webp"
+            alt="Depths of the Mind screenshot"
+            loading="lazy"
+        /></a>
+        <a href="depths-of-the-mind/screenshot2.png"
+          ><img
+            src="depths-of-the-mind/screenshot2.thumb.webp"
+            alt="Depths of the Mind screenshot"
+            loading="lazy"
+        /></a>
+        <a href="depths-of-the-mind/screenshot3.png"
+          ><img
+            src="depths-of-the-mind/screenshot3.thumb.webp"
+            alt="Depths of the Mind screenshot"
+            loading="lazy"
+        /></a>
 
-        <h3> Links </h3>
+        <h3>Links</h3>
         <ul class="link-list">
-          <li><a href="https://chrismondok.itch.io/depths-of-the-mind"> Play Depths of the Mind </a></li>
-          <li><a href="https://ldjam.com/events/ludum-dare/48/depths-of-the-mind"> Ludum Dare entry </a></li>
-          <li><a href="https://github.com/ChrisMondok/ludum-dare-48"> Source code </a></li>
+          <li>
+            <a href="https://chrismondok.itch.io/depths-of-the-mind">
+              Play Depths of the Mind
+            </a>
+          </li>
+          <li>
+            <a href="https://ldjam.com/events/ludum-dare/48/depths-of-the-mind">
+              Ludum Dare entry
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/ChrisMondok/ludum-dare-48">
+              Source code
+            </a>
+          </li>
         </ul>
       </article>
 
       <article id="loop-city">
         <header>
-          <h2> Loop City </h2>
+          <h2>Loop City</h2>
           <div class="subtitle">
             Ludum Dare 47 — <time datetime="2020-10-05">October 2020</time>
           </div>
-          <a class="play-button" href="https://whatguns.itch.io/loop-city"> Play </a>
+          <a class="play-button" href="https://whatguns.itch.io/loop-city">
+            Play
+          </a>
         </header>
 
         <p>
-        In Loop City, you’re a harried delivery driver working to ensure packages get delivered on time! The mail, as
-        they say, “just keeps coming”, but if you can find the hidden wormholes, and use them to shorten your trips,
-        you’ll be able to handle it like a pro.
+          In Loop City, you’re a harried delivery driver working to ensure
+          packages get delivered on time! The mail, as they say, “just keeps
+          coming”, but if you can find the hidden wormholes, and use them to
+          shorten your trips, you’ll be able to handle it like a pro.
         </p>
 
         <p>
-        This game is a 2d Crazy-Taxi-like where packages become ready to deliver, and you have to pick them up and get
-        them to their destination before your time runs out. You get points and a time bonus once you finish a job. The
-        game keeps looping until you run out of time!
+          This game is a 2d Crazy-Taxi-like where packages become ready to
+          deliver, and you have to pick them up and get them to their
+          destination before your time runs out. You get points and a time bonus
+          once you finish a job. The game keeps looping until you run out of
+          time!
         </p>
 
-        <h3> Images </h3>
-        <a href="loop-city/Logo-ldjam.png"><img src="loop-city/Logo-ldjam.thumb.webp" alt="Title screen" loading="lazy"/></a>
-        <a href="loop-city/screenshot1.png"><img src="loop-city/screenshot1.thumb.webp" alt="Loop City screenshot" loading="lazy"/></a>
-        <a href="loop-city/screenshot2.png"><img src="loop-city/screenshot2.thumb.webp" alt="Loop City screenshot" loading="lazy"/></a>
-        <a href="loop-city/screenshot3.png"><img src="loop-city/screenshot3.thumb.webp" alt="Loop City screenshot" loading="lazy"/></a>
+        <h3>Images</h3>
+        <a href="loop-city/Logo-ldjam.png"
+          ><img
+            src="loop-city/Logo-ldjam.thumb.webp"
+            alt="Title screen"
+            loading="lazy"
+        /></a>
+        <a href="loop-city/screenshot1.png"
+          ><img
+            src="loop-city/screenshot1.thumb.webp"
+            alt="Loop City screenshot"
+            loading="lazy"
+        /></a>
+        <a href="loop-city/screenshot2.png"
+          ><img
+            src="loop-city/screenshot2.thumb.webp"
+            alt="Loop City screenshot"
+            loading="lazy"
+        /></a>
+        <a href="loop-city/screenshot3.png"
+          ><img
+            src="loop-city/screenshot3.thumb.webp"
+            alt="Loop City screenshot"
+            loading="lazy"
+        /></a>
 
-        <h3> Links </h3>
+        <h3>Links</h3>
         <ul class="link-list">
-          <li><a href="https://whatguns.itch.io/loop-city"> Play Loop City </a></li>
-          <li><a href="https://ldjam.com/events/ludum-dare/47/loop-city-1"> Ludum Dare entry </a></li>
-          <li><a href="https://github.com/bassguitarbill/ludum-dare-47"> Source code </a></li>
+          <li>
+            <a href="https://whatguns.itch.io/loop-city"> Play Loop City </a>
+          </li>
+          <li>
+            <a href="https://ldjam.com/events/ludum-dare/47/loop-city-1">
+              Ludum Dare entry
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/bassguitarbill/ludum-dare-47">
+              Source code
+            </a>
+          </li>
         </ul>
-
       </article>
 
       <article id="tardigrades-on-the-moon">
         <header>
-          <h2> Tardigrades on the Moon <i title="recommended">★</i></h2>
+          <h2>Tardigrades on the Moon <i title="recommended">★</i></h2>
           <div class="subtitle">
             Ludum Dare 45 — <time datetime="2019-10-07">October 2019</time>
           </div>
-          <a class="play-button" href="https://whatguns.itch.io/tardigrades-on-the-moon"> Play </a>
+          <a
+            class="play-button"
+            href="https://whatguns.itch.io/tardigrades-on-the-moon"
+          >
+            Play
+          </a>
         </header>
 
         <p>
-        Tardigrades on the Moon is a light real time strategy game where you explore the lunar surface with a colony of
-        waterbears. Tardigrades dry out quickly, so you'll need to dig canals to keep them hydrated as they wander
-        around.
+          Tardigrades on the Moon is a light real time strategy game where you
+          explore the lunar surface with a colony of waterbears. Tardigrades dry
+          out quickly, so you'll need to dig canals to keep them hydrated as
+          they wander around.
         </p>
 
         <p>
-        This game is a fun interpretation of simulating moon life for tardigrades (aka waterbears) based on a recent
-        event where <a href="https://www.wired.com/story/a-crashed-israeli-lunar-lander-spilled-tardigrades-on-the-moon/">
-        a crashed Israeli Lunar lander spilled tardigrades on the moon</a>.
+          This game is a fun interpretation of simulating moon life for
+          tardigrades (aka waterbears) based on a recent event where
+          <a
+            href="https://www.wired.com/story/a-crashed-israeli-lunar-lander-spilled-tardigrades-on-the-moon/"
+          >
+            a crashed Israeli Lunar lander spilled tardigrades on the moon</a
+          >.
         </p>
 
-        <h3> Credits </h3>
+        <h3>Credits</h3>
 
         <p>
-        Tardigrades on the Moon was developed by <a href="https://whatguns.itch.io">What Guns Game Studios</a>,
-        consisting of:
+          Tardigrades on the Moon was developed by
+          <a href="https://whatguns.itch.io">What Guns Game Studios</a>,
+          consisting of:
         </p>
 
         <ul>
@@ -202,475 +376,906 @@
           <li>Mary Lou Fooder — Food and Moral Support</li>
         </ul>
 
-        <h3> Images </h3>
-        <a href="tardigrades-on-the-moon/title.png"><img src="tardigrades-on-the-moon/title.thumb.webp" alt="Title Screen" loading="lazy"/></a>
-        <a href="tardigrades-on-the-moon/screenshot1.png"><img src="tardigrades-on-the-moon/screenshot1.thumb.webp" alt="Tardigrades On The Moon" loading="lazy"/></a>
-        <a href="tardigrades-on-the-moon/screenshot3.png"><img src="tardigrades-on-the-moon/screenshot3.thumb.webp" alt="Tardigrades on the Moon" loading="lazy"/></a>
-        <a href="tardigrades-on-the-moon/screenshot4.png"><img src="tardigrades-on-the-moon/screenshot4.thumb.webp" alt="Tardigrades on the Moon" loading="lazy"/></a>
-        <a href="tardigrades-on-the-moon/screenshot5.png"><img src="tardigrades-on-the-moon/screenshot5.thumb.webp" alt="Tardigrades on the Moon" loading="lazy"/></a>
-        <a href="tardigrades-on-the-moon/screenshot7.png"><img src="tardigrades-on-the-moon/screenshot7.thumb.webp" alt="Tardigrades on the Moon" loading="lazy"/></a>
+        <h3>Images</h3>
+        <a href="tardigrades-on-the-moon/title.png"
+          ><img
+            src="tardigrades-on-the-moon/title.thumb.webp"
+            alt="Title Screen"
+            loading="lazy"
+        /></a>
+        <a href="tardigrades-on-the-moon/screenshot1.png"
+          ><img
+            src="tardigrades-on-the-moon/screenshot1.thumb.webp"
+            alt="Tardigrades On The Moon"
+            loading="lazy"
+        /></a>
+        <a href="tardigrades-on-the-moon/screenshot3.png"
+          ><img
+            src="tardigrades-on-the-moon/screenshot3.thumb.webp"
+            alt="Tardigrades on the Moon"
+            loading="lazy"
+        /></a>
+        <a href="tardigrades-on-the-moon/screenshot4.png"
+          ><img
+            src="tardigrades-on-the-moon/screenshot4.thumb.webp"
+            alt="Tardigrades on the Moon"
+            loading="lazy"
+        /></a>
+        <a href="tardigrades-on-the-moon/screenshot5.png"
+          ><img
+            src="tardigrades-on-the-moon/screenshot5.thumb.webp"
+            alt="Tardigrades on the Moon"
+            loading="lazy"
+        /></a>
+        <a href="tardigrades-on-the-moon/screenshot7.png"
+          ><img
+            src="tardigrades-on-the-moon/screenshot7.thumb.webp"
+            alt="Tardigrades on the Moon"
+            loading="lazy"
+        /></a>
 
-        <h3> Links </h3>
+        <h3>Links</h3>
         <ul class="link-list">
-          <li><a href="https://whatguns.itch.io/tardigrades-on-the-moon"> Play Tardigrades on the Moon </a></li>
-          <li><a href="https://ldjam.com/events/ludum-dare/45/tardigrades-on-the-moon/"> Ludum Dare entry </a></li>
-          <li><a href="https://github.com/bassguitarbill/tardigrame">Source code </a></li>
+          <li>
+            <a href="https://whatguns.itch.io/tardigrades-on-the-moon">
+              Play Tardigrades on the Moon
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://ldjam.com/events/ludum-dare/45/tardigrades-on-the-moon/"
+            >
+              Ludum Dare entry
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/bassguitarbill/tardigrame"
+              >Source code
+            </a>
+          </li>
         </ul>
       </article>
 
       <article id="zeppelin-defender">
         <header>
-          <h2> Zeppelin Defender </h2>
+          <h2>Zeppelin Defender</h2>
           <div class="subtitle">
             Game Off <time datetime="2017-12-01">2017</time>
           </div>
-          <a class="play-button" href="https://whatguns.itch.io/zeppelin-defender"> Play </a>
+          <a
+            class="play-button"
+            href="https://whatguns.itch.io/zeppelin-defender"
+          >
+            Play
+          </a>
         </header>
 
         <p>
-        Avoid death aboard two rickety gondolas suspended beneath a zeppelin! Enemies will try to cut your cables,
-        destroy them before they do. Or just move the platform out of the way! Your gun has limited ammo, use it
-        judiciously. Once a platform is gone, it's gone for good. Get a high score! Reflecting buzzsaws gives you bonus
-        points, and reflecting them into enemies gives you even more points!
+          Avoid death aboard two rickety gondolas suspended beneath a zeppelin!
+          Enemies will try to cut your cables, destroy them before they do. Or
+          just move the platform out of the way! Your gun has limited ammo, use
+          it judiciously. Once a platform is gone, it's gone for good. Get a
+          high score! Reflecting buzzsaws gives you bonus points, and reflecting
+          them into enemies gives you even more points!
         </p>
 
-        <h3> Credits </h3>
+        <h3>Credits</h3>
 
-        <p> Zeppelin Defender was an entry to Game Off 2017, and was created by our team of four: </p>
+        <p>
+          Zeppelin Defender was an entry to Game Off 2017, and was created by
+          our team of four:
+        </p>
 
         <ul>
-          <li> Chris Mondok — Design, Code, Voice Acting </li>
-          <li> Bill Rossi — Code, Art, Voice Acting </li>
-          <li> Rob Allen — Code, Art </li>
-          <li> Miki Tharp — Art </li>
+          <li>Chris Mondok — Design, Code, Voice Acting</li>
+          <li>Bill Rossi — Code, Art, Voice Acting</li>
+          <li>Rob Allen — Code, Art</li>
+          <li>Miki Tharp — Art</li>
         </ul>
 
-        <h3> Images </h3>
-        <a href="zeppelin-defender/screenshot0.png"><img src="zeppelin-defender/screenshot0.thumb.webp" alt="Title Screen" loading="lazy"/></a>
-        <a href="zeppelin-defender/screenshot1.png"><img src="zeppelin-defender/screenshot1.thumb.webp" alt="Zeppelin Defender screenshot" loading="lazy"/></a>
-        <a href="zeppelin-defender/screenshot2.png"><img src="zeppelin-defender/screenshot2.thumb.webp" alt="Zeppelin Defender screenshot" loading="lazy"/></a>
-        <a href="zeppelin-defender/screenshot3.png"><img src="zeppelin-defender/screenshot3.thumb.webp" alt="Zeppelin Defender screenshot" loading="lazy"/></a>
+        <h3>Images</h3>
+        <a href="zeppelin-defender/screenshot0.png"
+          ><img
+            src="zeppelin-defender/screenshot0.thumb.webp"
+            alt="Title Screen"
+            loading="lazy"
+        /></a>
+        <a href="zeppelin-defender/screenshot1.png"
+          ><img
+            src="zeppelin-defender/screenshot1.thumb.webp"
+            alt="Zeppelin Defender screenshot"
+            loading="lazy"
+        /></a>
+        <a href="zeppelin-defender/screenshot2.png"
+          ><img
+            src="zeppelin-defender/screenshot2.thumb.webp"
+            alt="Zeppelin Defender screenshot"
+            loading="lazy"
+        /></a>
+        <a href="zeppelin-defender/screenshot3.png"
+          ><img
+            src="zeppelin-defender/screenshot3.thumb.webp"
+            alt="Zeppelin Defender screenshot"
+            loading="lazy"
+        /></a>
 
-        <h3> Links </h3>
+        <h3>Links</h3>
         <ul class="link-list">
-          <li><a href="https://whatguns.itch.io/zeppelin-defender"> Play Zeppelin Defender </a></li>
-          <li><a href="https://itch.io/jam/game-off-2017/rate/199284"> Game Off entry </a></li>
-          <li><a href="https://github.com/ChrisMondok/zeppelin-defender">Source code</a></li>
+          <li>
+            <a href="https://whatguns.itch.io/zeppelin-defender">
+              Play Zeppelin Defender
+            </a>
+          </li>
+          <li>
+            <a href="https://itch.io/jam/game-off-2017/rate/199284">
+              Game Off entry
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/ChrisMondok/zeppelin-defender"
+              >Source code</a
+            >
+          </li>
         </ul>
-
       </article>
 
       <article id="crowd-fiend">
         <header>
-          <h2> Crowd Fiend </h2>
+          <h2>Crowd Fiend</h2>
           <div class="subtitle">
             Global Game Jam <time datetime="2016-01-31">2016</time>
           </div>
         </header>
 
         <p>
-        Crowd Fiend is a crowd-sourced demon-summoning game that you play on your phone. A large number of players
-        connect to the game using their smartphones, and are distributed among two teams. After the game begins, every
-        20 seconds, they'll be given a ritual to fulfill. Whenever a player completes a ritual, their team's demon gains
-        some points, allowing it to level up. After three minutes have elapsed, these demons use turn-based-RPG-style
-        rules to attack each other.
+          Crowd Fiend is a crowd-sourced demon-summoning game that you play on
+          your phone. A large number of players connect to the game using their
+          smartphones, and are distributed among two teams. After the game
+          begins, every 20 seconds, they'll be given a ritual to fulfill.
+          Whenever a player completes a ritual, their team's demon gains some
+          points, allowing it to level up. After three minutes have elapsed,
+          these demons use turn-based-RPG-style rules to attack each other.
         </p>
 
         <p>
-        Crowd Fiend was created at Raritan Valley Community College for Global Game Jam 2016, when the theme was
-        "Ritual." When forming teams on site, it attracted a large number of people, and as a result had a total of nine
-        contributors. The game concept came from Cory Williams, who pitched a game about summoning demons cooperatively
-        with phones. I had pitched a different game where players would perform a large number of easy, but repetitive
-        tasks, until they were overwhelmed. After hanging up posters to attract teams, we discovered that the two could
-        be merged quite well, and thus Crowd Fiend was born.
+          Crowd Fiend was created at Raritan Valley Community College for Global
+          Game Jam 2016, when the theme was "Ritual." When forming teams on
+          site, it attracted a large number of people, and as a result had a
+          total of nine contributors. The game concept came from Cory Williams,
+          who pitched a game about summoning demons cooperatively with phones. I
+          had pitched a different game where players would perform a large
+          number of easy, but repetitive tasks, until they were overwhelmed.
+          After hanging up posters to attract teams, we discovered that the two
+          could be merged quite well, and thus Crowd Fiend was born.
         </p>
 
         <p>
-        Despite network issues at the GGJ site, we managed to get a game with 36 players in it at the time of the demo.
-        A link to the event can be found below. I can't speak for the whole team, but personally I was extremely
-        nervous: the most players we had ever tested with prior to the event was 8, and while testing was done on a LAN,
-        when we presented the game it was done over the internet connecting to a Raspberry Pi 2 with a $5.00 wireless
-        card. Despite our best efforts, everything went quite smoothly, and a good time was had by most.
+          Despite network issues at the GGJ site, we managed to get a game with
+          36 players in it at the time of the demo. A link to the event can be
+          found below. I can't speak for the whole team, but personally I was
+          extremely nervous: the most players we had ever tested with prior to
+          the event was 8, and while testing was done on a LAN, when we
+          presented the game it was done over the internet connecting to a
+          Raspberry Pi 2 with a $5.00 wireless card. Despite our best efforts,
+          everything went quite smoothly, and a good time was had by most.
         </p>
 
-        <h3> Images </h3>
-        <a href="crowd-fiend/screenshot0.png"><img src="crowd-fiend/screenshot0.thumb.webp" alt="Rotation Ritual" loading="lazy"/></a>
-        <a href="crowd-fiend/screenshot1.png"><img src="crowd-fiend/screenshot1.thumb.webp" alt="Demon Chord Ritual" loading="lazy"/></a>
-        <a href="crowd-fiend/screenshot2.png"><img src="crowd-fiend/screenshot2.thumb.webp" alt="Incantation Ritual" loading="lazy"/></a>
-        <a href="crowd-fiend/screenshot3.png"><img src="crowd-fiend/screenshot3.thumb.webp" alt="Voodoo Ritual" loading="lazy"/></a>
-        <a href="crowd-fiend/screenshot4.png"><img src="crowd-fiend/screenshot4.thumb.webp" alt="Candles Ritual" loading="lazy"/></a>
-        <a href="crowd-fiend/poster.jpg"><img src="crowd-fiend/poster.thumb.jpg" alt="Crowd Fiend Poster" loading="lazy"/></a>
+        <h3>Images</h3>
+        <a href="crowd-fiend/screenshot0.png"
+          ><img
+            src="crowd-fiend/screenshot0.thumb.webp"
+            alt="Rotation Ritual"
+            loading="lazy"
+        /></a>
+        <a href="crowd-fiend/screenshot1.png"
+          ><img
+            src="crowd-fiend/screenshot1.thumb.webp"
+            alt="Demon Chord Ritual"
+            loading="lazy"
+        /></a>
+        <a href="crowd-fiend/screenshot2.png"
+          ><img
+            src="crowd-fiend/screenshot2.thumb.webp"
+            alt="Incantation Ritual"
+            loading="lazy"
+        /></a>
+        <a href="crowd-fiend/screenshot3.png"
+          ><img
+            src="crowd-fiend/screenshot3.thumb.webp"
+            alt="Voodoo Ritual"
+            loading="lazy"
+        /></a>
+        <a href="crowd-fiend/screenshot4.png"
+          ><img
+            src="crowd-fiend/screenshot4.thumb.webp"
+            alt="Candles Ritual"
+            loading="lazy"
+        /></a>
+        <a href="crowd-fiend/poster.jpg"
+          ><img
+            src="crowd-fiend/poster.thumb.jpg"
+            alt="Crowd Fiend Poster"
+            loading="lazy"
+        /></a>
 
-        <h3> Links </h3>
+        <h3>Links</h3>
         <ul class="link-list">
-          <li><a href="https://globalgamejam.org/2016/games/crowd-fiend"> Global Game Jam Entry </a></li>
-          <li><a href="https://github.com/cjwillia/crowd-source-demons"> Source Code </a></li>
+          <li>
+            <a href="https://globalgamejam.org/2016/games/crowd-fiend">
+              Global Game Jam Entry
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/cjwillia/crowd-source-demons">
+              Source Code
+            </a>
+          </li>
           <li><a href="https://youtu.be/GDqOzan4rf4"> GGJ presentation </a></li>
         </ul>
       </article>
 
       <article id="zolf">
         <header>
-          <h2> Zolf </h2>
+          <h2>Zolf</h2>
           <div class="subtitle">
             Ludum Dare 32 — <time datetime="2015-04-19">April 2015</time>
           </div>
-          <a class="play-button" href="https://chrismondok.github.io/zolf/"> Play </a>
+          <a class="play-button" href="https://chrismondok.github.io/zolf/">
+            Play
+          </a>
         </header>
 
         <p>
-        Zolf is a game about winning a round of golf during the zombie apocalypse. Like any golfing game, the objective
-        is to hit the ball into the hole in as few strokes as possible. Unlike any golfing game, you gain
-        <em>negative</em> points for killing zombies by hitting them with a fast-moving golf ball. You also gain
-        infinite points for getting eaten by zombies (making you lose at golf).
+          Zolf is a game about winning a round of golf during the zombie
+          apocalypse. Like any golfing game, the objective is to hit the ball
+          into the hole in as few strokes as possible. Unlike any golfing game,
+          you gain
+          <em>negative</em> points for killing zombies by hitting them with a
+          fast-moving golf ball. You also gain infinite points for getting eaten
+          by zombies (making you lose at golf).
         </p>
 
         <p>
-        Zolf was an entry for Ludum Dare 32, where the theme was "an unconventional weapon." As a "Jam" entry, it had a
-        72 hour time line, and was allowed to be a team project. It was developed by a team of four:
+          Zolf was an entry for Ludum Dare 32, where the theme was "an
+          unconventional weapon." As a "Jam" entry, it had a 72 hour time line,
+          and was allowed to be a team project. It was developed by a team of
+          four:
         </p>
 
-        <h3> Images </h3>
-        <a href="zolf/zolf1.png"><img src="zolf/zolf1.thumb.webp" alt="Zolf 1" loading="lazy"/></a>
-        <a href="zolf/zolf2.png"><img src="zolf/zolf2.thumb.webp" alt="Zolf 2" loading="lazy"/></a>
-        <a href="zolf/zolf3.png"><img src="zolf/zolf3.thumb.webp" alt="Zolf 3" loading="lazy"/></a>
-        <a href="zolf/zolf4.png"><img src="zolf/zolf4.thumb.webp" alt="Zolf 4" loading="lazy"/></a>
+        <h3>Images</h3>
+        <a href="zolf/zolf1.png"
+          ><img src="zolf/zolf1.thumb.webp" alt="Zolf 1" loading="lazy"
+        /></a>
+        <a href="zolf/zolf2.png"
+          ><img src="zolf/zolf2.thumb.webp" alt="Zolf 2" loading="lazy"
+        /></a>
+        <a href="zolf/zolf3.png"
+          ><img src="zolf/zolf3.thumb.webp" alt="Zolf 3" loading="lazy"
+        /></a>
+        <a href="zolf/zolf4.png"
+          ><img src="zolf/zolf4.thumb.webp" alt="Zolf 4" loading="lazy"
+        /></a>
 
-        <h3> Links </h3>
+        <h3>Links</h3>
         <ul class="link-list">
           <li><a href="https://chrismondok.github.io/zolf/"> Play Zolf </a></li>
-          <li><a href="https://web.archive.org/web/https://ludumdare.com/compo/ludum-dare-32/?action=preview&uid=31703"> Zolf's submission page </a></li>
+          <li>
+            <a
+              href="https://web.archive.org/web/https://ludumdare.com/compo/ludum-dare-32/?action=preview&uid=31703"
+            >
+              Zolf's submission page
+            </a>
+          </li>
         </ul>
       </article>
 
       <article id="sports-medley">
         <header>
-          <h2> Sports Medley </h2>
+          <h2>Sports Medley</h2>
           <div class="subtitle">
             Global Game Jam <time datetime="2015-01-25">2015</time>
           </div>
         </header>
 
         <p>
-        Sports Medley is a local multiplayer game in which players rapidly switch between playing hockey, dodgeball,
-        kill the carrier, and "ultimate flying disc." There is a bonus round where everyone is playing every sport at
-        once.
+          Sports Medley is a local multiplayer game in which players rapidly
+          switch between playing hockey, dodgeball, kill the carrier, and
+          "ultimate flying disc." There is a bonus round where everyone is
+          playing every sport at once.
         </p>
 
         <p>
-        Sports Medley was a Global Game Jam 2015 entry, where the theme was "what do we do now?". While it was a success
-        at the jam, the peculiarities around the web gamepad API make it very difficult to get started. You can give it
-        a shot if you like, or just watch <a href="https://youtu.be/5lNAtRrnpz8">this video</a>.
+          Sports Medley was a Global Game Jam 2015 entry, where the theme was
+          "what do we do now?". While it was a success at the jam, the
+          peculiarities around the web gamepad API make it very difficult to get
+          started. You can give it a shot if you like, or just watch
+          <a href="https://youtu.be/5lNAtRrnpz8">this video</a>.
         </p>
 
         <p>
-        Sports Medley was designed and implemented by Chris Mondok and Justin Giannone. Graphics were provided by Ben
-        Harris and Jon Echavarria. Brian Thompson created the audio. Nick Matthews provided the (mildly disturbing)
-        <a href="sports-medley/poster.png">game poster</a>.
+          Sports Medley was designed and implemented by Chris Mondok and Justin
+          Giannone. Graphics were provided by Ben Harris and Jon Echavarria.
+          Brian Thompson created the audio. Nick Matthews provided the (mildly
+          disturbing)
+          <a href="sports-medley/poster.png">game poster</a>.
         </p>
 
-        <h3> Links </h3>
+        <h3>Links</h3>
         <ul class="link-list">
-          <li><a href="https://github.com/ChrisMondok/sports"> See the source </a></li>
-          <li><a href="https://youtu.be/5lNAtRrnpz8"> Watch a prerelease video of Sports Medley </a></li>
-          <li><a href="https://chrismondok.github.io/sports/"> Try to play Sports Medley </a></li>
+          <li>
+            <a href="https://github.com/ChrisMondok/sports"> See the source </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/5lNAtRrnpz8">
+              Watch a prerelease video of Sports Medley
+            </a>
+          </li>
+          <li>
+            <a href="https://chrismondok.github.io/sports/">
+              Try to play Sports Medley
+            </a>
+          </li>
         </ul>
       </article>
 
       <article id="snowman-race">
         <header>
-          <h2> Snowman Race </h2>
+          <h2>Snowman Race</h2>
           <div class="subtitle">
             Ludum Dare 31 — <time datetime="2014-12-08">December 2014</time>
           </div>
-          <a class="play-button" href="https://chrismondok.github.io/snowman/"> Play </a>
+          <a class="play-button" href="https://chrismondok.github.io/snowman/">
+            Play
+          </a>
         </header>
 
         <p>
-        Snowman Race is an Next Generation Snowman Racing Simulator. Players use their smartphones as controllers to
-        race to the end of a simple maze, gathering items to slow their enemies along the way.
+          Snowman Race is an Next Generation Snowman Racing Simulator. Players
+          use their smartphones as controllers to race to the end of a simple
+          maze, gathering items to slow their enemies along the way.
         </p>
 
         <p>
-        Snowman Race was created for the Ludum Dare Competition. As such, it was developed from scratch in 48 hours as a
-        solo project. The theme of the competition was "entire game on one screen", which I took to mean a multiplayer
-        game where everyone looked at the same screen. The winter asthetic came from a potential theme, which was simply
-        "&#9731;" (the unicode snowman character).
+          Snowman Race was created for the Ludum Dare Competition. As such, it
+          was developed from scratch in 48 hours as a solo project. The theme of
+          the competition was "entire game on one screen", which I took to mean
+          a multiplayer game where everyone looked at the same screen. The
+          winter asthetic came from a potential theme, which was simply
+          "&#9731;" (the unicode snowman character).
         </p>
 
         <p>
-        For reasons unknown, the game does not work on iPhones, nor on OSX. I was unable to research this during the
-        duration of the jam, and indeed came to learn this afterwards when there were many confused commenters. If you
-        want to give it a try, you'll be best off using Android phones, and Chrome or Firefox on Linux or Windows.
+          For reasons unknown, the game does not work on iPhones, nor on OSX. I
+          was unable to research this during the duration of the jam, and indeed
+          came to learn this afterwards when there were many confused
+          commenters. If you want to give it a try, you'll be best off using
+          Android phones, and Chrome or Firefox on Linux or Windows.
         </p>
 
-        <h3> Images </h3>
-        <a href="snowman-race/screenshot0.png"><img src="snowman-race/screenshot0.thumb.webp" alt="snowman-race 0" loading="lazy"/></a>
-        <a href="snowman-race/screenshot1.png"><img src="snowman-race/screenshot1.thumb.webp" alt="snowman-race 1" loading="lazy"/></a>
-        <a href="snowman-race/screenshot2.png"><img src="snowman-race/screenshot2.thumb.webp" alt="snowman-race 2" loading="lazy"/></a>
+        <h3>Images</h3>
+        <a href="snowman-race/screenshot0.png"
+          ><img
+            src="snowman-race/screenshot0.thumb.webp"
+            alt="snowman-race 0"
+            loading="lazy"
+        /></a>
+        <a href="snowman-race/screenshot1.png"
+          ><img
+            src="snowman-race/screenshot1.thumb.webp"
+            alt="snowman-race 1"
+            loading="lazy"
+        /></a>
+        <a href="snowman-race/screenshot2.png"
+          ><img
+            src="snowman-race/screenshot2.thumb.webp"
+            alt="snowman-race 2"
+            loading="lazy"
+        /></a>
 
-        <h3> Links </h3>
+        <h3>Links</h3>
         <ul class="link-list">
-          <li><a href="https://chrismondok.github.io/snowman/"> Play Snowman Race (requires at least two players) </a></li>
-          <li><a href="https://web.archive.org/web/https://ludumdare.com/compo/ludum-dare-31/?action=preview&uid=31703"> Snowman Race's submission page </a></li>
-          <li><a href="https://github.com/chrismondok/snowman"> See the source </a></li>
+          <li>
+            <a href="https://chrismondok.github.io/snowman/">
+              Play Snowman Race (requires at least two players)
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://web.archive.org/web/https://ludumdare.com/compo/ludum-dare-31/?action=preview&uid=31703"
+            >
+              Snowman Race's submission page
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/chrismondok/snowman">
+              See the source
+            </a>
+          </li>
         </ul>
       </article>
 
       <article id="tether">
         <header>
-          <h2> Tether <i title="recommended">★</i></h2>
+          <h2>Tether <i title="recommended">★</i></h2>
           <div class="subtitle">
             Ludum Dare 30 — <time datetime="2014-08-25">August 2014</time>
           </div>
-          <a class="play-button" href="https://chrismondok.github.io/hvac-in-space"> Play </a>
+          <a
+            class="play-button"
+            href="https://chrismondok.github.io/hvac-in-space"
+          >
+            Play
+          </a>
         </header>
 
         <p>
-        In Tether, you play the pilot of a Planet Collector Tethercraft, gathering planets using a massive cable. The
-        goal is to connect all of the planets in the level into one network.
+          In Tether, you play the pilot of a Planet Collector Tethercraft,
+          gathering planets using a massive cable. The goal is to connect all of
+          the planets in the level into one network.
         </p>
 
-        <p> Tether was a Ludum Dare Jam entry, in which the theme was "connected worlds". It was produced by a team of four: </p>
+        <p>
+          Tether was a Ludum Dare Jam entry, in which the theme was "connected
+          worlds". It was produced by a team of four:
+        </p>
 
         <ul>
-          <li> Chris Mondok — Developer </li>
-          <li> Bill Rossi — Developer </li>
-          <li> Miki Tharp — Art </li>
-          <li> Ryan Shello — Music and sound effects </li>
+          <li>Chris Mondok — Developer</li>
+          <li>Bill Rossi — Developer</li>
+          <li>Miki Tharp — Art</li>
+          <li>Ryan Shello — Music and sound effects</li>
         </ul>
 
         <p>
-        On a personal note, I love how this game came together. By Saturday night, we thought the project would be a
-        massive failure, and none of us could remember our high school physics. Despite that, we got everything working
-        smoothly enough on Sunday, and things were looking a lot better. The graphics by Miki and the audio from Ryan
-        really tie it together. We got the ability to have multiple levels, and then a win and loss condition, within
-        the last hour of the jam.
+          On a personal note, I love how this game came together. By Saturday
+          night, we thought the project would be a massive failure, and none of
+          us could remember our high school physics. Despite that, we got
+          everything working smoothly enough on Sunday, and things were looking
+          a lot better. The graphics by Miki and the audio from Ryan really tie
+          it together. We got the ability to have multiple levels, and then a
+          win and loss condition, within the last hour of the jam.
         </p>
 
-        <p> This game was also my first foray into the web audio API. </p>
+        <p>This game was also my first foray into the web audio API.</p>
 
-        <h3> Screenshots </h3>
-        <a href="tether/screenshot0.png"><img src="tether/screenshot0.thumb.webp" alt="tether 0" loading="lazy"/></a>
-        <a href="tether/screenshot1.png"><img src="tether/screenshot1.thumb.webp" alt="tether 1" loading="lazy"/></a>
-        <a href="tether/screenshot2.png"><img src="tether/screenshot2.thumb.webp" alt="tether 2" loading="lazy"/></a>
+        <h3>Screenshots</h3>
+        <a href="tether/screenshot0.png"
+          ><img
+            src="tether/screenshot0.thumb.webp"
+            alt="tether 0"
+            loading="lazy"
+        /></a>
+        <a href="tether/screenshot1.png"
+          ><img
+            src="tether/screenshot1.thumb.webp"
+            alt="tether 1"
+            loading="lazy"
+        /></a>
+        <a href="tether/screenshot2.png"
+          ><img
+            src="tether/screenshot2.thumb.webp"
+            alt="tether 2"
+            loading="lazy"
+        /></a>
 
-        <h3> Links </h3>
+        <h3>Links</h3>
         <ul class="link-list">
-          <li><a href="https://chrismondok.github.io/hvac-in-space"> Play Tether </a></li>
-          <li><a href="https://web.archive.org/web/https://ludumdare.com/compo/ludum-dare-30/?action=preview&uid=31703"> Tether's submission page </a></li>
-          <li><a href="https://github.com/chrismondok/hvac-in-space"> Check out the source </a></li>
+          <li>
+            <a href="https://chrismondok.github.io/hvac-in-space">
+              Play Tether
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://web.archive.org/web/https://ludumdare.com/compo/ludum-dare-30/?action=preview&uid=31703"
+            >
+              Tether's submission page
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/chrismondok/hvac-in-space">
+              Check out the source
+            </a>
+          </li>
         </ul>
       </article>
 
       <article id="rototheremin">
         <header>
-          <h2> Rototheremin <i title="recommended">★</i></h2>
+          <h2>Rototheremin <i title="recommended">★</i></h2>
           <time class="subtitle" datetime="2014-08-14">August 2014</time>
-          <a class="play-button" href="https://chrismondok.github.io/rototheremin/"> Play </a>
+          <a
+            class="play-button"
+            href="https://chrismondok.github.io/rototheremin/"
+          >
+            Play
+          </a>
         </header>
 
         <p>
-        The Rototheremin is a fun little toy "instrument" played on a smartphone. Tap and hold the screen to make a
-        sound. While holding, pitch the phone up and down to change the frequency.
+          The Rototheremin is a fun little toy "instrument" played on a
+          smartphone. Tap and hold the screen to make a sound. While holding,
+          pitch the phone up and down to change the frequency.
         </p>
 
         <p>
-        It is tested on iOS, and on Chrome and Firefox for Android. Note that android users might need to face north to
-        produce a sound.
+          It is tested on iOS, and on Chrome and Firefox for Android. Note that
+          android users might need to face north to produce a sound.
         </p>
 
-        <h3> Screenshot </h3>
-        <a href="rototheremin/screenshot0.png"><img src="rototheremin/screenshot0.thumb.webp" alt="Rototheremin" loading="lazy"/></a>
+        <h3>Screenshot</h3>
+        <a href="rototheremin/screenshot0.png"
+          ><img
+            src="rototheremin/screenshot0.thumb.webp"
+            alt="Rototheremin"
+            loading="lazy"
+        /></a>
 
-        <h3> Links </h3>
+        <h3>Links</h3>
         <ul class="link-list">
-          <li><a href="https://chrismondok.github.io/rototheremin/"> Play the rototheremin </a></li>
-          <li><a href="https://github.com/ChrisMondok/rototheremin"> View the source </a></li>
+          <li>
+            <a href="https://chrismondok.github.io/rototheremin/">
+              Play the rototheremin
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/ChrisMondok/rototheremin">
+              View the source
+            </a>
+          </li>
         </ul>
       </article>
 
       <article id="ham-3r">
         <header>
-          <h2> HAM-3R </h2>
+          <h2>HAM-3R</h2>
           <div class="subtitle">
             Global Game Jam <time datetime="2014-01-26">2014</time>
           </div>
-          <a class="play-button" href="https://chrismondok.github.io/Ham-3R/index.html"> Play </a>
+          <a
+            class="play-button"
+            href="https://chrismondok.github.io/Ham-3R/index.html"
+          >
+            Play
+          </a>
         </header>
 
         <p>
-        HAM-3R is an abstract game about doing three things at once. Enemies (red squares) appear in a semicircle around
-        the player's ship. They can be defeated by clicking on them, aiming and shooting at them, or by typing the words
-        that appear above them. However, if you rely on one method of attack, it will become much harder. Every time the
-        mouse is clicked, subsequent enemies become smaller. Each time the beam is fired, it becomes narrower. When
-        words are typed, incoming enemies get longer and longer words.
+          HAM-3R is an abstract game about doing three things at once. Enemies
+          (red squares) appear in a semicircle around the player's ship. They
+          can be defeated by clicking on them, aiming and shooting at them, or
+          by typing the words that appear above them. However, if you rely on
+          one method of attack, it will become much harder. Every time the mouse
+          is clicked, subsequent enemies become smaller. Each time the beam is
+          fired, it becomes narrower. When words are typed, incoming enemies get
+          longer and longer words.
         </p>
 
         <p>
-        HAM-3R was created for Global Game Jam 2014. It was very well received, with other GGJ participants interrupting
-        my progress to play it for themselves (which was always welcome). The game is intended to be played with a
-        steering wheel, but it works fine with just a mouse and keyboard. The game was developed before any of my
-        browsers had gamepad support, so using a wheel requires a Linux (or possibly OSX) server written in node. This
-        server also acts as the highscore table, which is not set up in the online link provided below.
+          HAM-3R was created for Global Game Jam 2014. It was very well
+          received, with other GGJ participants interrupting my progress to play
+          it for themselves (which was always welcome). The game is intended to
+          be played with a steering wheel, but it works fine with just a mouse
+          and keyboard. The game was developed before any of my browsers had
+          gamepad support, so using a wheel requires a Linux (or possibly OSX)
+          server written in node. This server also acts as the highscore table,
+          which is not set up in the online link provided below.
         </p>
 
-        <p> The game was designed and developed by myself, with audio by Matt Strawder. </p>
-        <h3> Videos </h3>
+        <p>
+          The game was designed and developed by myself, with audio by Matt
+          Strawder.
+        </p>
+        <h3>Videos</h3>
 
         <a href="https://youtu.be/CRlcWRyoa6k">
-          <img src="https://img.youtube.com/vi/CRlcWRyoa6k/default.jpg" alt="Video 1" loading="lazy"/>
+          <img
+            src="https://img.youtube.com/vi/CRlcWRyoa6k/default.jpg"
+            alt="Video 1"
+            loading="lazy"
+          />
         </a>
         <a href="https://youtu.be/O4s1GnYR19c">
-          <img src="https://img.youtube.com/vi/O4s1GnYR19c/default.jpg" alt="Video 2" loading="lazy"/>
+          <img
+            src="https://img.youtube.com/vi/O4s1GnYR19c/default.jpg"
+            alt="Video 2"
+            loading="lazy"
+          />
         </a>
         <a href="https://youtu.be/FiS94_thVUU">
-          <img src="https://img.youtube.com/vi/FiS94_thVUU/default.jpg" alt="Video 3" loading="lazy"/>
+          <img
+            src="https://img.youtube.com/vi/FiS94_thVUU/default.jpg"
+            alt="Video 3"
+            loading="lazy"
+          />
         </a>
 
-        <h3> Images </h3>
-        <a href="ham-3r/screenshot1.png"><img src="ham-3r/screenshot1.thumb.webp" alt="ham-3r" loading="lazy"/></a>
-        <a href="ham-3r/screenshot2.png"><img src="ham-3r/screenshot2.thumb.webp" alt="ham-3r" loading="lazy"/></a>
-        <a href="ham-3r/screenshot3.png"><img src="ham-3r/screenshot3.thumb.webp" alt="ham-3r" loading="lazy"/></a>
-        <a href="ham-3r/wheel.jpg"><img src="ham-3r/wheel.thumb.jpg" alt="Playing with a racing wheel" loading="lazy"/></a>
+        <h3>Images</h3>
+        <a href="ham-3r/screenshot1.png"
+          ><img src="ham-3r/screenshot1.thumb.webp" alt="ham-3r" loading="lazy"
+        /></a>
+        <a href="ham-3r/screenshot2.png"
+          ><img src="ham-3r/screenshot2.thumb.webp" alt="ham-3r" loading="lazy"
+        /></a>
+        <a href="ham-3r/screenshot3.png"
+          ><img src="ham-3r/screenshot3.thumb.webp" alt="ham-3r" loading="lazy"
+        /></a>
+        <a href="ham-3r/wheel.jpg"
+          ><img
+            src="ham-3r/wheel.thumb.jpg"
+            alt="Playing with a racing wheel"
+            loading="lazy"
+        /></a>
 
-        <h3> Links </h3>
+        <h3>Links</h3>
         <ul class="link-list">
-          <li><a href="https://chrismondok.github.io/Ham-3R/index.html"> Play HAM-3R </a></li>
-          <li><a href="https://github.com/ChrisMondok/Ham-3R"> View the source </a></li>
-          <li><a href="https://globalgamejam.org/2014/games/ham-3r"> Global Game Jam Entry </a></li>
+          <li>
+            <a href="https://chrismondok.github.io/Ham-3R/index.html">
+              Play HAM-3R
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/ChrisMondok/Ham-3R">
+              View the source
+            </a>
+          </li>
+          <li>
+            <a href="https://globalgamejam.org/2014/games/ham-3r">
+              Global Game Jam Entry
+            </a>
+          </li>
         </ul>
       </article>
 
       <article id="pinger">
         <header>
-          <h2> Pinger </h2>
+          <h2>Pinger</h2>
           <div class="date">
             Ludum Dare 29 — <time datetime="2014-04-27">April 2014</time>
           </div>
-          <a class="play-button" href="https://chrismondok.github.io/Pinger/"> Play </a>
+          <a class="play-button" href="https://chrismondok.github.io/Pinger/">
+            Play
+          </a>
         </header>
 
         <p>
-        Pinger is a game about using triangulation to locate gold while avoiding water and mining as little dirt as
-        possible. By deploying a sort of sonar pulse, the player can see how far they are from pieces of gold. By
-        deploying pulses from different locations, they can figure out the precise locations of these gold pieces.
+          Pinger is a game about using triangulation to locate gold while
+          avoiding water and mining as little dirt as possible. By deploying a
+          sort of sonar pulse, the player can see how far they are from pieces
+          of gold. By deploying pulses from different locations, they can figure
+          out the precise locations of these gold pieces.
         </p>
 
         <p>
-        It was created for the Ludum Dare 29 competition, and was a great success, earning 29th place, out of over 2000
-        participants. (Amusingly, I did not notice this coincidence until writing this document.)
+          It was created for the Ludum Dare 29 competition, and was a great
+          success, earning 29th place, out of over 2000 participants.
+          (Amusingly, I did not notice this coincidence until writing this
+          document.)
         </p>
 
-        <h3> Images </h3>
-        <a href="pinger/screenshot0.png"><img src="pinger/screenshot0.thumb.webp" alt="pinger" loading="lazy"/></a>
-        <a href="pinger/screenshot1.png"><img src="pinger/screenshot1.thumb.webp" alt="pinger" loading="lazy"/></a>
+        <h3>Images</h3>
+        <a href="pinger/screenshot0.png"
+          ><img src="pinger/screenshot0.thumb.webp" alt="pinger" loading="lazy"
+        /></a>
+        <a href="pinger/screenshot1.png"
+          ><img src="pinger/screenshot1.thumb.webp" alt="pinger" loading="lazy"
+        /></a>
 
-        <h3> Links </h3>
+        <h3>Links</h3>
         <ul class="link-list">
-          <li><a href="https://chrismondok.github.io/Pinger/"> Play Pinger </a></li>
-          <li><a href="https://web.archive.org/web/https://ludumdare.com/compo/ludum-dare-29/?action=preview&uid=31703"> View Pinger's submission page </a></li>
-          <li><a href="https://github.com/ChrisMondok/Pinger"> View the source </a></li>
+          <li>
+            <a href="https://chrismondok.github.io/Pinger/"> Play Pinger </a>
+          </li>
+          <li>
+            <a
+              href="https://web.archive.org/web/https://ludumdare.com/compo/ludum-dare-29/?action=preview&uid=31703"
+            >
+              View Pinger's submission page
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/ChrisMondok/Pinger">
+              View the source
+            </a>
+          </li>
         </ul>
       </article>
 
       <article id="park-king">
         <header>
-          <h2> Park-King </h2>
+          <h2>Park-King</h2>
           <div class="subtitle">
             Ludum Dare 28 — <time datetime="2013-12-15">December 2013</time>
           </div>
-          <a class="play-button" href="https://chrismondok.github.io/Park-King/"> Play </a>
+          <a
+            class="play-button"
+            href="https://chrismondok.github.io/Park-King/"
+          >
+            Play
+          </a>
         </header>
 
         <p>
-        Park-King is a sliding puzzle game about managing a busy parking lot. The player arranges cars as they arrive,
-        but they will need to depart out-of-order. Additionally, there is a period of time in which the player must
-        break for lunch, and cannot do anything for a few moments.
+          Park-King is a sliding puzzle game about managing a busy parking lot.
+          The player arranges cars as they arrive, but they will need to depart
+          out-of-order. Additionally, there is a period of time in which the
+          player must break for lunch, and cannot do anything for a few moments.
         </p>
 
         <p>
-        The game is played by carefully dragging cars around with the mouse. There is no requirement as to where the
-        cars are placed, so long as they can depart in time.
+          The game is played by carefully dragging cars around with the mouse.
+          There is no requirement as to where the cars are placed, so long as
+          they can depart in time.
         </p>
 
         <p>
-        Park-King was an entry in the Ludum Dare 28, where the theme was "You Only Get One". I had interpreted this to
-        mean that the player character only gets one break from his job, his lunch break at 1:00 PM.
+          Park-King was an entry in the Ludum Dare 28, where the theme was "You
+          Only Get One". I had interpreted this to mean that the player
+          character only gets one break from his job, his lunch break at 1:00
+          PM.
         </p>
 
         <p>
-        Park-King was my first Ludum Dare project. Reception was mixed: some players found the game amusing (and even
-        addictive). Others had absolutely no idea what was going on. The in-game tutorial is confusing, not to mention
-        cringe-worthy. While I enjoyed this project, it was a harsh realization that I need to be extremely clear in
-        describing how to play my games in the future.
+          Park-King was my first Ludum Dare project. Reception was mixed: some
+          players found the game amusing (and even addictive). Others had
+          absolutely no idea what was going on. The in-game tutorial is
+          confusing, not to mention cringe-worthy. While I enjoyed this project,
+          it was a harsh realization that I need to be extremely clear in
+          describing how to play my games in the future.
         </p>
 
-        <h3> Images </h3>
-        <a href="park-king/screenshot0.png"><img src="park-king/screenshot0.thumb.webp" alt="park-king" loading="lazy"/></a>
-        <a href="park-king/screenshot1.png"><img src="park-king/screenshot1.thumb.webp" alt="park-king" loading="lazy"/></a>
+        <h3>Images</h3>
+        <a href="park-king/screenshot0.png"
+          ><img
+            src="park-king/screenshot0.thumb.webp"
+            alt="park-king"
+            loading="lazy"
+        /></a>
+        <a href="park-king/screenshot1.png"
+          ><img
+            src="park-king/screenshot1.thumb.webp"
+            alt="park-king"
+            loading="lazy"
+        /></a>
 
-        <h3> Links </h3>
+        <h3>Links</h3>
         <ul class="link-list">
-          <li><a href="https://chrismondok.github.io/Park-King/"> Play Park-King </a></li>
-          <li><a href="https://web.archive.org/web/https://ludumdare.com/compo/ludum-dare-28/?action=preview&uid=31703"> View Park-King's submission page </a></li>
-          <li><a href="https://github.com/ChrisMondok/Park-King"> View the source </a></li>
+          <li>
+            <a href="https://chrismondok.github.io/Park-King/">
+              Play Park-King
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://web.archive.org/web/https://ludumdare.com/compo/ludum-dare-28/?action=preview&uid=31703"
+            >
+              View Park-King's submission page
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/ChrisMondok/Park-King">
+              View the source
+            </a>
+          </li>
         </ul>
       </article>
 
       <article id="ballin-spain">
         <header>
-          <h2> Ballin' Spain </h2>
+          <h2>Ballin' Spain</h2>
           <div class="subtitle">
             Global Game Jam <time datetime="2010-01-31">2010</time>
           </div>
         </header>
 
         <p>
-        Ballin Spain is a game about bouncing a guacamole-colored ball off the top of the screen as quickly as possible.
-        Some of the platforms in the game are not what they seem.
+          Ballin Spain is a game about bouncing a guacamole-colored ball off the
+          top of the screen as quickly as possible. Some of the platforms in the
+          game are not what they seem.
         </p>
 
         <p>
-        Ballin Spain was created for the 2010 Global Game Jam, where the theme was deception. It was developed by a team
-        of 6:
+          Ballin Spain was created for the 2010 Global Game Jam, where the theme
+          was deception. It was developed by a team of 6:
         </p>
 
         <ul>
-          <li> Brian Wilbur </li>
-          <li> Chris Mondok </li>
-          <li> Ian Dunlap </li>
-          <li> Ivan Potosky </li>
-          <li> Kevin Anderson </li>
-          <li> Zach Pinner </li>
+          <li>Brian Wilbur</li>
+          <li>Chris Mondok</li>
+          <li>Ian Dunlap</li>
+          <li>Ivan Potosky</li>
+          <li>Kevin Anderson</li>
+          <li>Zach Pinner</li>
         </ul>
 
         <p>
-        This was my first game jam, and while I was skeptical going in, I have attended every game jam I can since. I
-        highly recommend attending one, even if you think you have little to bring to the table. You'd be surprised what
-        you can learn, and they're great fun.
+          This was my first game jam, and while I was skeptical going in, I have
+          attended every game jam I can since. I highly recommend attending one,
+          even if you think you have little to bring to the table. You'd be
+          surprised what you can learn, and they're great fun.
         </p>
 
-        <h3> Images </h3>
-        <a href="ballin-spain/screenshot100.png"><img src="ballin-spain/screenshot100.thumb.webp" alt="Ballin Spain Screenshot" loading="lazy"/></a>
-        <a href="ballin-spain/screenshot104.png"><img src="ballin-spain/screenshot104.thumb.webp" alt="Ballin Spain Screenshot" loading="lazy"/></a>
-        <a href="ballin-spain/screenshot106.png"><img src="ballin-spain/screenshot106.thumb.webp" alt="Ballin Spain Screenshot" loading="lazy"/></a>
-        <a href="ballin-spain/screenshot107.png"><img src="ballin-spain/screenshot107.thumb.webp" alt="Ballin Spain Screenshot" loading="lazy"/></a>
-        <a href="ballin-spain/screenshot111.png"><img src="ballin-spain/screenshot111.thumb.webp" alt="Ballin Spain Screenshot" loading="lazy"/></a>
-        <a href="ballin-spain/screenshot113.png"><img src="ballin-spain/screenshot113.thumb.webp" alt="Ballin Spain Screenshot" loading="lazy"/></a>
-        <a href="ballin-spain/screenshot115.png"><img src="ballin-spain/screenshot115.thumb.webp" alt="Ballin Spain Screenshot" loading="lazy"/></a>
-        <a href="ballin-spain/screenshot122.png"><img src="ballin-spain/screenshot122.thumb.webp" alt="Ballin Spain Screenshot" loading="lazy"/></a>
-        <a href="ballin-spain/screenshot124.png"><img src="ballin-spain/screenshot124.thumb.webp" alt="Ballin Spain Screenshot" loading="lazy"/></a>
-        <a href="ballin-spain/screenshot129.png"><img src="ballin-spain/screenshot129.thumb.webp" alt="Ballin Spain Screenshot" loading="lazy"/></a>
+        <h3>Images</h3>
+        <a href="ballin-spain/screenshot100.png"
+          ><img
+            src="ballin-spain/screenshot100.thumb.webp"
+            alt="Ballin Spain Screenshot"
+            loading="lazy"
+        /></a>
+        <a href="ballin-spain/screenshot104.png"
+          ><img
+            src="ballin-spain/screenshot104.thumb.webp"
+            alt="Ballin Spain Screenshot"
+            loading="lazy"
+        /></a>
+        <a href="ballin-spain/screenshot106.png"
+          ><img
+            src="ballin-spain/screenshot106.thumb.webp"
+            alt="Ballin Spain Screenshot"
+            loading="lazy"
+        /></a>
+        <a href="ballin-spain/screenshot107.png"
+          ><img
+            src="ballin-spain/screenshot107.thumb.webp"
+            alt="Ballin Spain Screenshot"
+            loading="lazy"
+        /></a>
+        <a href="ballin-spain/screenshot111.png"
+          ><img
+            src="ballin-spain/screenshot111.thumb.webp"
+            alt="Ballin Spain Screenshot"
+            loading="lazy"
+        /></a>
+        <a href="ballin-spain/screenshot113.png"
+          ><img
+            src="ballin-spain/screenshot113.thumb.webp"
+            alt="Ballin Spain Screenshot"
+            loading="lazy"
+        /></a>
+        <a href="ballin-spain/screenshot115.png"
+          ><img
+            src="ballin-spain/screenshot115.thumb.webp"
+            alt="Ballin Spain Screenshot"
+            loading="lazy"
+        /></a>
+        <a href="ballin-spain/screenshot122.png"
+          ><img
+            src="ballin-spain/screenshot122.thumb.webp"
+            alt="Ballin Spain Screenshot"
+            loading="lazy"
+        /></a>
+        <a href="ballin-spain/screenshot124.png"
+          ><img
+            src="ballin-spain/screenshot124.thumb.webp"
+            alt="Ballin Spain Screenshot"
+            loading="lazy"
+        /></a>
+        <a href="ballin-spain/screenshot129.png"
+          ><img
+            src="ballin-spain/screenshot129.thumb.webp"
+            alt="Ballin Spain Screenshot"
+            loading="lazy"
+        /></a>
 
-        <h3> Links </h3>
+        <h3>Links</h3>
         <ul class="link-list">
-          <li><a href="https://github.com/ChrisMondok/ballin-spain/releases/tag/1.0"> Download Ballin' Spain (windows only) </a></li>
-          <li><a href="https://web.archive.org/web/20160116140350/https://archive.globalgamejam.org/2010/ballin-spain"> Global Game Jam Entry </a></li>
+          <li>
+            <a
+              href="https://github.com/ChrisMondok/ballin-spain/releases/tag/1.0"
+            >
+              Download Ballin' Spain (windows only)
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://web.archive.org/web/20160116140350/https://archive.globalgamejam.org/2010/ballin-spain"
+            >
+              Global Game Jam Entry
+            </a>
+          </li>
         </ul>
       </article>
-
     </main>
-    <script type="module" src="script.js"></script>
+    <table-of-contents></table-of-contents>
   </body>
 </html>

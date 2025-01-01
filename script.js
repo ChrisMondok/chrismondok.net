@@ -1,27 +1,39 @@
-import {createTableOfContents} from './toc.js';
+class TableOfContents extends HTMLElement {
+  connectedCallback() {
+    this.append(createTableOfContents());
+  }
 
-addEventListener('load', () => {
-  const articles = Array.from(document.querySelectorAll('article[id]'));
+  disconnectedCallback() {}
+}
 
-  const toc = createTableOfContents();
+customElements.define("table-of-contents", TableOfContents);
 
-  document.body.insertBefore(toc, document.querySelector('main'));
+function createTableOfContents() {
+  const articles = Array.from(document.querySelectorAll("article[id]"));
 
-  const tocButton = document.createElement('button');
-  tocButton.id = 'toc-button';
-  tocButton.textContent = '☰';
-  document.body.appendChild(tocButton);
+  const links = Array.from(document.querySelectorAll("article[id]")).map(
+    (article) => {
+      const link = document.createElement("a");
+      link.href = `#${article.id}`;
+      link.textContent = article.querySelector("h2").textContent;
+      link.article = article;
+      return link;
+    }
+  );
 
-  tocButton.addEventListener('click', () => {
-    document.body.classList.toggle('show-toc');
+  let timeout;
+
+  const entries = links.map((link) => {
+    const entry = document.createElement("li");
+    entry.appendChild(link);
+    return entry;
   });
 
-  document.querySelector('main').addEventListener('click', () => {
-    document.body.classList.remove('show-toc');
-  });
+  const list = document.createElement("ul");
+  list.classList.add("link-list");
+  for (const entry of entries) list.appendChild(entry);
 
-  addEventListener('hashchange', () => {
-    document.body.classList.remove('show-toc');
-  });
-
-});
+  const nav = document.createElement("nav");
+  nav.append(list);
+  return nav;
+}

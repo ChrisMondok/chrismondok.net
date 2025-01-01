@@ -1,7 +1,8 @@
 :root {
   --fg: #222;
-  --article-bg: #FFF;
-  --page-bg: #CCC;
+  --article-bg: #fff;
+  --page-bg: #ccc;
+  --nav-bg: var(--page-bg);
   --link-color: blue;
   --button-bg: var(--fg);
   --button-fg: var(--article-bg);
@@ -13,7 +14,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --fg: #CCC;
+    --fg: #ccc;
     --article-bg: #222;
     --page-bg: #000000;
     --link-color: orange;
@@ -25,15 +26,47 @@
 }
 
 body {
-  font-family: system-ui;
+  font-family: sans-serif;
   color: var(--fg);
   background-color: var(--page-bg);
   margin: 0;
+  display: grid;
+  grid-template-areas:
+    "title"
+    "nav"
+    "main";
+
+  > header {
+    padding: 1rem;
+    grid-area: title;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+nav {
+  grid-area: nav;
+  display: none;
+  background-color: var(--nav-bg);
+
+  .show-nav & {
+    display: block;
+  }
 }
 
 h1 {
-  padding: 1rem;
+  padding: 0;
   margin: 0;
+  grid-area: title;
+  font-size: 1.5rem;
 }
 
 a:link {
@@ -47,50 +80,55 @@ a:visited {
 article {
   padding: 1rem;
   background-color: var(--article-bg);
+
+  header {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "title controls"
+      "subtitle controls";
+
+    h2 {
+      grid-area: title;
+      margin: 0;
+    }
+
+    .subtitle {
+      grid-area: subtitle;
+    }
+
+    a.play-button {
+      grid-area: controls;
+    }
+  }
 }
 
-article + article {
-  margin-top: 1rem;
-}
-
-article header {
-  display: grid;
-  align-items: center;
-  grid-template-rows: auto auto;
-  grid-template-columns: 1fr auto;
-}
-
-article header h2 {
-  grid-column: 1;
-  grid-row: 1;
-}
-
-article header .subtitle {
-  grid-column: 1;
-  grid-row: 2;
-}
-
-article header a.play-button {
-  grid-row: 1/-1;
-  grid-column: 2;
-}
-
-article header h2 {
-  margin: 0;
-}
-
+#nav-button,
 a.play-button {
   color: var(--button-fg);
   background-color: var(--button-bg);
   font-weight: bold;
   text-decoration: none;
-  padding: 2px 1em;
   border-radius: 4px;
+  border: none;
   box-shadow: 0px 0px 4px currentcolor;
 }
 
+a.play-button {
+  padding: 2px 1em;
+}
+
+#nav-button:hover,
 a.play-button:hover {
   box-shadow: 0px 0px 8px var(--link-color);
+}
+
+#nav-button {
+  width: 21px;
+  height: 21px;
+  box-sizing: content-box;
+  padding: 1ex;
 }
 
 img[src$="thumb.webp"] {
@@ -104,53 +142,47 @@ i[title="recommended"] {
   font-style: normal;
 }
 
-#toc-button {
-  z-index: 2;
-  position: fixed;
-  left: 32px;
-  bottom: 32px;
-  font-size: 1em;
-  color: var(--button-fg);
-  background-color: var(--button-bg);
-  width: 32px;
-  height: 32px;
-  text-align: center;
-  border: none;
-  border-radius: 100%;
-}
-
 @media (min-width: 900px) {
+  :root {
+    --nav-bg: var(--article-bg);
+  }
+
   body {
     display: grid;
     gap: 1rem;
-    grid-template-columns: 250px fit-content(8in);
+    grid-template-columns: fit-content(8in) 250px;
+    grid-template-areas:
+      "title title"
+      "main nav";
     justify-content: center;
     align-items: flex-start;
   }
 
-  body > header {
-    grid-column: 2;
-    grid-row: 1;
+  nav {
+    position: sticky;
+    top: 0;
+    display: block;
   }
 
-  main {
-    grid-column: 2;
-    grid-row: 2;
+  h1 {
+    font-size: 2rem;
+    padding: 1rem 0 0 0;
   }
 
-  #toc-button {
+  #nav-button {
     display: none;
   }
 }
 
-
-a[href^="https://web.archive.org"]:after {
-  content: '(archived)';
+a[href^="https://web.archive.org"]:after
+{
+  content: "(archived)";
   font-style: italic;
 }
 
-a[href^="https://github.com"]:after {
-  content: '';
+a[href^="https://github.com"]:after
+{
+  content: "";
   display: inline-block;
   font-style: italic;
   height: 1em;
@@ -161,8 +193,25 @@ a[href^="https://github.com"]:after {
 }
 
 @media (pointer: coarse) {
-  .link-list li+li {
+  .link-list li + li {
     padding-top: 0.5rem;
   }
 }
 
+@media print {
+  :root {
+    --page-bg: white;
+  }
+
+  article {
+    border: 1px solid currentcolor;
+  }
+
+  nav {
+    display: none;
+  }
+}
+
+table-of-contents {
+  display: contents;
+}
