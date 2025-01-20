@@ -4,12 +4,21 @@
   --page-bg: #ccc;
   --nav-bg: var(--page-bg);
   --link-color: blue;
-  --button-bg: var(--fg);
-  --button-fg: var(--article-bg);
+  --button-bg: color-mix(in oklab, var(--article-bg), black 10%);
   --visited-link-color: purple;
   --overlay-color: rgba(0, 0, 0, 0.25);
   --github-icon-url: url(GitHub-Mark-32px.png);
   --star-color: orange;
+
+  --shadow-elevation-low: 0px 2px 4px -1px rgba(0, 0, 0, 0.6);
+  --shadow-elevation-medium: 0px 30px 60px rgba(0, 0, 0, 0.6);
+  --shadow-elevation-high: 0px 60px 120px rgba(0, 0, 0, 0.6);
+
+  --inset-concave: inset 0px -2px 2px -2px rgba(255, 255, 255, 0.4),
+    inset 0px 2px 3px 0px rgba(0, 0, 0, 0.4);
+
+  --inset-convex: inset 0px 2px 2px -2px rgba(255, 255, 255, 0.4),
+    inset 0px -2px 2px 0px rgba(0, 0, 0, 0.4);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,6 +31,7 @@
     --overlay-color: rgba(0, 0, 0, 0.5);
     --github-icon-url: url(GitHub-Mark-Light-32px.png);
     --star-color: yellow;
+    --button-bg: color-mix(in oklab, var(--article-bg), white 10%);
   }
 }
 
@@ -73,7 +83,7 @@ a:link {
   color: var(--link-color);
 }
 
-a:visited {
+a:not(.button):visited {
   color: var(--visited-link-color);
 }
 
@@ -98,30 +108,32 @@ article {
       grid-area: subtitle;
     }
 
-    a.play-button {
+    .button {
       grid-area: controls;
     }
   }
 }
 
-#nav-button,
-a.play-button {
-  color: var(--button-fg);
+button,
+.button {
+  color: inherit;
   background-color: var(--button-bg);
+  box-shadow:
+    var(--inset-convex),
+    var(--shadow-elevation-low),
+    0px 0px 0px 1px rgba(0, 0, 0, 0.6);
+  border: none;
+  box-sizing: border-box;
   font-weight: bold;
   text-decoration: none;
   border-radius: 4px;
-  border: none;
-  box-shadow: 0px 0px 4px currentcolor;
-}
-
-a.play-button {
   padding: 2px 1em;
-}
 
-#nav-button:hover,
-a.play-button:hover {
-  box-shadow: 0px 0px 8px var(--link-color);
+  &:active {
+    box-shadow:
+      var(--inset-concave),
+      0px 0px 0px 1px rgba(0, 0, 0, 0.6);
+  }
 }
 
 #nav-button {
