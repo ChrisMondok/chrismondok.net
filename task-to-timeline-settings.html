@@ -1,0 +1,75 @@
+<!doctype html>
+<title>Task to Timeline Configuration</title>
+<a id="authenticateLink" style="display: none">
+  Authenticate with Google Tasks
+</a>
+<form method="GET">
+  <fieldset>
+    <legend>Options</legend>
+    <label>
+      <input type="number" min="0" max="23" name="hour" id="hourInput" />
+      Time of Day
+    </label>
+    <p>What time of day should tasks appear on the timeline?</p>
+  </fieldset>
+
+  <fieldset id="listFields" style="display: none">
+    <legend>Task Lists</legend>
+    <template id="taskListRowTmpl">
+      <div>
+        <label>
+          <input type="checkbox" name="shown" />
+        </label>
+      </div>
+    </template>
+  </fieldset>
+  <button>Save</button>
+</form>
+<script>
+  const searchParams = new URLSearchParams(location.search);
+  if (searchParams.has("return_to")) {
+    sessionStorage.setItem("returnTo", searchParams.get("return_to"));
+  }
+
+  const returnTo = sessionStorage.getItem("returnTo") ?? "pebblejs://close#";
+
+  if (searchParams.has("code")) {
+    location.href = `${returnTo}code=${encodeURIComponent(searchParams.get("code"))}`;
+  }
+
+  if (searchParams.has("hour")) hourInput.value = searchParams.get("hour");
+
+  const redirectUrl = new URL(location.href);
+  redirectUrl.search = "";
+
+  const authUrl = new URL("https://accounts.google.com/o/oauth2/v2/auth");
+  authUrl.searchParams.set("access_type", "offline");
+  authUrl.searchParams.set("response_type", "code");
+  authUrl.searchParams.set("scope", "https://www.googleapis.com/auth/tasks");
+  authUrl.searchParams.set("redirect_uri", redirectUrl.toString());
+  authUrl.searchParams.set(
+    "client_id",
+    "515173417615-itv0jn16fai86vkfvq7nbu9eqok11oep.apps.googleusercontent.com"
+  );
+  authenticateLink.href = authUrl.toString();
+
+  document.querySelector("form").action = returnTo;
+
+  if (searchParams.get("isLoggedIn") === "true") {
+    listFields.style.display = "";
+  } else {
+    authenticateLink.style.display = "";
+  }
+
+  if (searchParams.has("lists")) {
+    const parsed = JSON.parse(searchParams.get("lists"));
+    for (const { id, title, shown } of parsed) {
+      const row = taskListRowTmpl.content.cloneNode(true);
+      const input = row.querySelector("input");
+      input.value = id;
+      row.querySelector("label").append(title);
+      input.checked = shown;
+      taskListRowTmpl.parentElement.insertBefore(row, taskListRowTmpl);
+    }
+  }
+</script>
